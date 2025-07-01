@@ -32,10 +32,6 @@ style.css
 login-hero-bg.jpg
 ```
 
-## 🖼️ Preview
-
-![Login Form Preview](login-hero-bg.jpg)
-
 ## 🛠️ Customization
 
 - **Background Image:** Replace `login-hero-bg.jpg` with your preferred image for a personalized look.

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("./login-hero-bg.jpg") no-repeat;
+  background-size: cover;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+}
+label {
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s;
+}
+.container {
+  width: 410px;
+  height: 500px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+.container h1 {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+.container form {
+  padding: 20px;
+}
+.container .email-input,
+.container .password-input {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.container .email-input #email,
+.container .password-input #password {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  caret-color: white;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+.container .email-input label,
+.container .password-input label {
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.container .email-input #email:focus + label,
+.container .email-input #email:valid + label,
+.container .password-input #password:focus + label,
+.container .password-input #password:valid + label {
+  left: 0;
+  top: -10px;
+  font-size: 10px;
+}
+.container .remember-forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container .btn .submit-btn {
+  color: black;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background: white;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 55px;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: all 0.3s;
+}
+.container .btn .submit-btn:hover {
+  border: 1px solid white;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+}
+.register {
+  margin-top: 30px;
+  text-align: center;
+}
+.register p {
+  color: white;
+}
+@media (min-width: 375px) and (max-width: 786px) {
+  .container {
+    width: 400px;
+    height: 500px;
+  }
+  .container form {
+    padding: 0;
+  }
+}
